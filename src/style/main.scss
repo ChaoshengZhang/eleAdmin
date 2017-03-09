@@ -1,0 +1,81 @@
+body,html{
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+  	font-family: "microsoft yahei";
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #333;
+
+}
+#side-bar{
+	&>.el-menu{
+		.el-submenu{
+			.el-menu-item{
+				height:40px;
+				line-height:40px;
+			}
+			.el-submenu{
+				.el-submenu__title{
+					height:40px;
+					line-height:40px;
+				}
+			}
+		}
+		&>.is-active{
+			background-color: #3c4958;
+			color: #ffffff;
+			&>.el-submenu__title{
+				background-color: #3c4958 !important;
+			}
+			&>.el-menu>.is-active{
+				background-color: #455466 !important;
+			  	color: rgba(255,255,255,0.8);
+			}
+		}
+	}
+  	.el-menu>.el-submenu>.el-menu>.el-submenu>.el-menu>.el-menu-item:hover{
+	  	color: #43adfc;
+	  	background-color: transparent !important;
+	}
+}
+.el-tooltip__popper{
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  	border:none !important;
+}
+.el-badge__content{
+  	line-height:16px;
+  	padding:0 5px;
+}
+.el-table__header-wrapper th .cell{
+  	font-weight: bold;
+}
+.alarm-num{
+  background: darkred;
+  display: inline-block;
+  padding:0 5px;
+  height:16px;
+  line-height:16px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  color: #ffffff;
+  margin-left:4px;
+}
+
+.fold-enter-active {
+	animation-name: fold-in;
+	animation-duration: .5s;
+}
+@keyframes fold-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity:1;
+	}
+}

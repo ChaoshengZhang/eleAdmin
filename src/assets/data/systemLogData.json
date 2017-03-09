@@ -1,0 +1,53 @@
+{
+    "appCode":200,
+    "result":[
+        {
+            "operator": "章超胜",
+            "modular": "用户",
+            "remarks": "用户登录",
+            "level": "info",
+            "IPAddress": "192.168.10.15",
+            "time": "2017-3-9 15:54:11"
+        },
+	    {
+		    "operator": "程冉",
+		    "modular": "管理员",
+		    "remarks": "管理员登录",
+		    "level": "info",
+		    "IPAddress": "192.168.42.15",
+		    "time": "2017-3-9 15:54:11"
+	    },
+	    {
+		    "operator": "周凌云",
+		    "modular": "用户",
+		    "remarks": "用户登录",
+		    "level": "info",
+		    "IPAddress": "192.168.12.25",
+		    "time": "2017-3-9 15:54:11"
+	    },
+	    {
+		    "operator": "章超胜",
+		    "modular": "用户",
+		    "remarks": "用户登录",
+		    "level": "info",
+		    "IPAddress": "192.168.10.15",
+		    "time": "2017-3-9 15:54:11"
+	    },
+	    {
+		    "operator": "程冉",
+		    "modular": "管理员",
+		    "remarks": "管理员登录",
+		    "level": "info",
+		    "IPAddress": "192.168.42.15",
+		    "time": "2017-3-9 15:54:11"
+	    },
+	    {
+		    "operator": "周凌云",
+		    "modular": "用户",
+		    "remarks": "用户登录",
+		    "level": "info",
+		    "IPAddress": "192.168.12.25",
+		    "time": "2017-3-9 15:54:11"
+	    }
+    ]
+}
