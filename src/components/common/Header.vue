@@ -106,10 +106,12 @@
         color: #ffffff !important;
         line-height:50px;
     }
-    /***zcs**/
+    /**章超胜 2017年3月10日09:41:26**/
     .demo{
         font-size: 14px;
         color: #000;
+        height: 24px;
+        line-height:24px;
     }
 </style>
 <script>
