@@ -2,12 +2,12 @@ body, html {
   height: 100%;
   overflow: hidden;
   position: relative;
-  font-size: 12px;
-  font-family: "microsoft yahei"; }
+  font-size: 14px;
+  font-family: "Verdana","microsoft yahei"; }
 
 a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   color: #333; }
 
 #side-bar > .el-menu .el-submenu .el-menu-item {
@@ -52,6 +52,27 @@ a {
   color: #ffffff;
   margin-left: 4px; }
 
+#main {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  background-color: #fff;
+  right: 0;
+  bottom: 0;
+  overflow: auto; }
+  #main .main-wrapper {
+    overflow: auto;
+    position: relative;
+    min-height: 100%;
+    padding: 20px 20px 60px 20px; }
+    #main .main-wrapper .my-crumbs {
+      margin-bottom: 20px; }
+    #main .main-wrapper .pagination {
+      text-align: right;
+      margin-top: 20px; }
+  #main .search-submit {
+    text-align: right; }
+
 .fold-enter-active {
   animation-name: fold-in;
   animation-duration: .5s; }
@@ -61,5 +82,18 @@ a {
     opacity: 0; }
   100% {
     opacity: 1; } }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,12 @@
 <template>
-    <div id="table">
+    <div id="system-log-table" class="admin-table">
+        <div class="crumbs my-crumbs">
+            <el-breadcrumb separator="/">
+                <el-breadcrumb-item><i class="el-icon-menu"></i> 防御平台管理</el-breadcrumb-item>
+                <el-breadcrumb-item>系统管理</el-breadcrumb-item>
+                <el-breadcrumb-item>系统日志</el-breadcrumb-item>
+            </el-breadcrumb>
+        </div>
         <el-table
                 :data="systemLogData"
                 style="width: 100%">
@@ -25,9 +32,21 @@
             </el-table-column>
             <el-table-column
                     prop="time"
-                    label="时间">
+                    label="时间"
+                    sortable>
             </el-table-column>
         </el-table>
+        <div class="pagination">
+            <el-pagination
+                    @size-change="handleSizeChange"
+                    @current-change="handleCurrentChange"
+                    :current-page="currentPage"
+                    :page-sizes="[10, 20, 30, 40]"
+                    :page-size="10"
+                    layout="total, sizes, prev, pager, next, jumper"
+                    :total="400">
+            </el-pagination>
+        </div>
     </div>
 </template>
 <script>
@@ -38,7 +57,7 @@
         data() {
             return {
                 systemLogData: [],
-                currentPage:1
+                currentPage:4
             }
         },
         beforeMount(){
@@ -50,9 +69,13 @@
             console.log("already updated11111");
         },
         methods:{
-            consoleFn:function(){
-                console.log("abc")
-            }
+	        handleSizeChange(val) {
+		        console.log(`每页 ${val} 条`);
+	        },
+	        handleCurrentChange(val) {
+		        this.currentPage = val;
+		        console.log(`当前页: ${val}`);
+	        }
         }
     }
 
