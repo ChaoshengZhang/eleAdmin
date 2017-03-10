@@ -112,6 +112,8 @@
         color: #000;
         height: 24px;
         line-height:24px;
+        padding:10px;
+        background-color: #fff;
     }
 </style>
 <script>
